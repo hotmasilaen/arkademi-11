@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="nama"></p>
+    <script>
+        let nama = "Farhan";
+        nama = "Nia";
+        const umur = 20;
+
+        console.log('umur: ', umur);
+        // alert('nama: ' + nama);
+
+        document.getElementById('nama').innerHTML = 'Nama: ' + nama;
+
+        const num1 = 12;
+        const num2 = 100;
+        const hasil = num2 - num1
+        console.log(typeof hasil);
+        console.log(hasil);
+
+        // Contoh Perbandingan Angka
+        const val1 = 26;
+        const val2 = '25';
+        console.log(val1 !== val2);
+
+        const val3 = "Jakarta";
+        const val4 = "Jakarta";
+        console.log(val3 === val4);
+
+        const string1 = 'kode pos: 134345';
+        console.log(string1.length);
+        console.log(string1.slice(10, 16));
+
+        const age = 18;
+        if(age == 17){
+            console.log("umurnya sudah 17 tahun atau 17 tahun keatas.");
+        } else if(age == 18){
+            console.log("umurnya sudah 18 tahun.");
+        } else if (age == 19) {
+            console.log("umurnya sudah 19 tahun.");
+        } else {
+            console.log("umurnya belum 17 tahun.");
+        }
+
+        const day = 4
+        switch (day) {
+            case 1:
+                break;
+            case 2:
+                console.log("Hari ini hari Selasa");
+                break;
+            case 3:
+                console.log("Hari ini hari Rabu");
+                break;
+            case 4:
+                console.log("Hari ini hari Kamis");
+                break;
+            default:
+                console.log("umurnya belum 17 tahun.");
+                break;
+        }
+
+        for (var i = 1; i <= 3; i++) {
+            console.log(i); 
+        }
+
+        const namaSiswa = [
+            {
+                nama: "Farhan",
+                umur: 17,
+            }, 
+            "Nia",
+            "Siti",
+            "Ahmad",
+            "Nurul"
+        ];
+
+        const dataSiswa = {
+            nama: "Farhan",
+            umur: 17,
+            alamat: {
+                provinsi: "DIY",
+                kodepos: 327928,
+            }
+        }
+
+        for (var i = 0; i < namaSiswa.length; i++) {
+        }
+
+        for (var i in namaSiswa) {
+            console.log("Nama siswa: " + namaSiswa[i]);
+        }
+
+        function penjumlahan(v1, v2) {
+            console.log(typeof v1, typeof v2);
+            let hasil = v1 + v2;
+            return hasil
+        }
+
+        const value1 = 1000;
+        const value2 = 16000;
+        const hasil1 = penjumlahan(value2)
+        const value3 = 30000;
+        const value4 = 300000;
+        const hasil2 = penjumlahan(value3, value4);
+
+        console.log("Hasil1: " + hasil1);
+
+        console.log(dataSiswa.nama);
+        console.log(dataSiswa.umur);
+    </script>
+</body>
+</html>

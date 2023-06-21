@@ -1,0 +1,331 @@
+ button {
+     font-weight: bold;
+     border-radius: 5px;
+ }
+
+ .btn-masuk {
+     color: #006cbb;
+     background-color: white;
+     border: 1px solid #006cbb;
+     padding: 10px 20px;
+     margin-right: 10px;
+ }
+
+ .kategory{
+   display: flex;
+   align-items: center;
+ }
+
+ .btn-kategori {
+     color: black;
+     border: none;
+     background-color: white;
+      gap: 5px;
+      font-family: Montserrat;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding-top: 8px;
+   position: relative;
+   margin: 1px 21px 0 36px;
+   display: flex;
+ }
+
+ .btn-daftar {
+     background-color: #0977be;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+ }
+
+ .img-container {
+     background-image: url('./image-effect-hero-comp.webp');
+     background-repeat: no-repeat;
+     background-position: center;
+     filter: blur(1px);
+ }
+
+ #btn-lihat-karier {
+    background: linear-gradient(261.28deg, #ff9417 18.17%, #ff8017 84.69%);
+    border-radius: 0.429vw;
+    border: none;
+    outline: none;
+    min-width: 24.285vw;
+    height: 3.932vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.701vw;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 1.097vw;
+    line-height: 1.357vw;
+    letter-spacing: .013vw;
+    color: #fff;
+    margin-top: 6rem;
+     /* width: 100px;
+     height: 100px; */
+     /* transition: width 2s, height 2s, transform 2s, background-color 2s;
+     transition-delay: 2s; */
+     /* animation: animasiKotak 2s ease 3 alternate forwards running; */
+     /* animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); */
+ }
+
+ /* #btn-lihat-karier:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+    background-color: black;
+ } */
+
+ input {
+     border: none;
+ }
+
+ .search {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+ }
+
+ h1{
+    font-size: 2.378vw;
+ }
+
+ .display-flex{
+    display: flex;
+    align-items: center;
+ }
+
+ .section-header{
+    height: 59px;
+    margin: 0;
+    width: 100%;
+ }
+
+ .nav-header{
+    /* top: 0;
+    position: fixed;
+    z-index: 999;
+    height: 59px;
+    width: 100%;
+    padding: 11px 15px 12px 23px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(28, 29, 32, .051);
+    justify-content: space-between;
+    transition: all .2s ease-in;
+    display: flex;
+    flex-direction: row;
+    align-items: center; */
+
+   top: 0;
+   position: fixed;
+   z-index: 999;
+   height: 59px;
+   width: 95%;
+   padding: 11px 15px 12px 23px;
+   background-color: #fff;
+   box-shadow: 0 1px 1px 0 rgba(28, 29, 32, .051);
+   justify-content: space-between;
+   transition: all .2s ease-in;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
+
+ .menus{
+    color: #333539;
+    font-weight: 700;
+    text-decoration: none;
+ }
+
+ .text-baru{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 33px;
+   height: 16.5px;
+   background: #15ab3f;
+   border-radius: 3px;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 8.73529px;
+   line-height: 11px;
+   color: #fff;
+ }
+
+ .text-promo{
+    margin: 0 20px;
+ }
+
+ .prakerja{
+    margin-right: 20px;
+ }
+
+ .section-2{
+    justify-content: space-between;
+    position: relative;
+    padding-top: 4.857vw;
+    padding-bottom: 12.545vw;
+    margin: auto;
+    width: 80%;
+    z-index: 1;
+ }
+
+ .text-tingkatkan{
+    color: #006cbb;
+ }
+
+ .img-pendidikan{
+    margin-right: 20px;
+ }
+
+ .left-side{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 100%;
+   max-width: 48%;
+ }
+
+ .ic-brand{
+   height: 24px;
+   width: 137px;
+   cursor: pointer;
+   position: relative;
+ }
+
+ /* span {
+   box-sizing: border-box;
+   display: inline-block;
+   overflow: hidden;
+   width: 137px;
+   height: 24px;
+   background: none;
+   opacity: 1;
+   border: 0px;
+   margin: 0px;
+   padding: 0px;
+   position: relative;
+ }
+
+ img {
+   position: absolute;
+   inset: 0px;
+   box-sizing: border-box;
+   padding: 0px;
+   border: none;
+   margin: auto;
+   display: block;
+   width: 0px;
+   height: 0px;
+   min-width: 100%;
+   max-width: 100%;
+   min-height: 100%;
+   max-height: 100%;
+ } */
+
+ .search-container{
+   position: relative;
+   display: flex;
+   width: 100%;
+   height: 36px;
+   border: 0.6px solid #a8aaae;
+   background-color: #fff;
+   border-radius: 5px;
+   padding: 11px 13px;
+ }
+ .wrapper input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    color: #a8aaae;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 400;
+ }
+
+ .right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 33px;
+ }
+
+ .menus-container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   font-family: Montserrat;
+   font-size: 12.5px;
+   font-weight: 700;
+   gap: 32px;
+   color: #333539;
+ }
+
+ .menus-ganti-karier{
+   display: flex;
+   gap: 8px;
+   margin-left: 15px;
+ }
+
+ .menus-promo{
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 12.5px;
+   line-height: 15px;
+   cursor: pointer;
+ }
+
+ .buttons{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 11px;
+ }
+
+ .btn{
+   font-family: Montserrat;
+   font-size: 12.5px;
+   font-weight: 700;
+   height: 36px;
+   width: 90px;
+   border-radius: 5px;
+   outline: none
+ }
+
+ .fasilitas{
+   margin: 0 13rem;
+   justify-content: space-between;
+ }
+
+ .fasilitas-wrapper{
+   border: 1px solid black;
+   border-radius: 10px;
+   padding: 20px;
+ }
+
+ @keyframes animasiKotak {
+    from{
+        width: 100px;
+        height: 100px;
+    }
+    to{
+        width: 300px;
+        height: 300px;
+    }    
+ }
+
+ @media only screen and (max-width: 600px) {
+    .display-flex{
+        flex-direction: column;
+    }
+    
+    .right-side, .btn-kategori, .search{
+        display: none;
+    }
+    
+ }

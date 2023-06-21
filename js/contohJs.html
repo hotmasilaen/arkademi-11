@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login/Logout Example</title>
+</head>
+
+<body>
+    <h1>Login/Logout Example</h1>
+
+    <div id="loginContainer">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <br>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="loggedInContainer" style="display: none;">
+        <p>Welcome, <span id="loggedInUser"></span>!</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "password") {
+                localStorage.setItem("loggedInUser", username);
+                showLoggedInState(username);
+            } else {
+                alert("Invalid username or password");
+            }
+        }
+
+        function logout() {
+            localStorage.removeItem("loggedInUser");
+            showLoggedOutState();
+        }
+
+        function showLoggedInState(username) {
+            document.getElementById("loginContainer").style.display = "none";
+            document.getElementById("loggedInContainer").style.display = "block";
+            document.getElementById("loggedInUser").textContent = username;
+        }
+
+        function showLoggedOutState() {
+            document.getElementById("loginContainer").style.display = "block";
+            document.getElementById("loggedInContainer").style.display = "none";
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+        }
+
+        // Check if the user is already logged in on page load
+        document.addEventListener("DOMContentLoaded", function () {
+            var loggedInUser = localStorage.getItem("loggedInUser");
+            if (loggedInUser) {
+                showLoggedInState(loggedInUser);
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validationForm(){
+            let x = document.forms["myForm"]["fname"].value;
+            if(x == ''){
+                alert("Nama tidak boleh kosong");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Kursus Online dari
+    Lembaga Pelatihan Resmi untuk
+    Tingkatkan Karier Profesionalmu -->
+    <!-- <a href="./promo-event.html">Promo & Event</a><br/>
+    <b href="https://arkademi.com/">Kursus Online dari
+    Lembaga Pelatihan Resmi untuk
+    Tingkatkan Karier Profesionalmu</b>
+
+    <h1>Kategori Terpopuler</h1>
+    <h6 alt="foto-mentor">Kategori Terpopuler</h6>
+
+    <img alt="foto-mentor" src="../image-new-hero-comp.c0ee2441.png"  />
+
+    <mark>Kursus Online dari
+    Lembaga Pelatihan Resmi untuk
+    Tingkatkan Karier Profesionalmu</mark> -->
+
+    <h2>Validation</h2>
+    <form name="myForm" onsubmit="return validationForm()" >
+        Name: <input type="text" name="fname" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th><b>Nama</b></th>
+                <th>No. Hp</th>
+                <th>Alamat</th>
+                <th>Kode pos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Farhan</td>
+                <td>08217843567435</td>
+                <td>Jakarta</td>
+                <td>98876</td>
+            </tr>
+            <tr>
+                <td>Nia</td>
+                <td>08217843567435</td>
+                <td>Lampung</td>
+                <td>98876</td>
+            </tr>
+            <tr>
+                <td>Siti</td>
+                <td>08217843567435</td>
+                <td>Medan</td>
+                <td>98876</td>
+            </tr>
+            <tr>
+                <td>Sari</td>
+                <td>08217843567435</td>
+                <td>Bali</td>
+                <td>98876</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
